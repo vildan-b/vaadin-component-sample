@@ -16,7 +16,7 @@ import com.vaadin.flow.dom.ElementConstants;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.component.html.Anchor;
 
-@Route("")
+@Route("Accordion To-Do")
 public class MainView extends VerticalLayout {
 
     public MainView() {
@@ -54,11 +54,11 @@ public class MainView extends VerticalLayout {
         personalAdresse.setPadding(false);
         acordionAdresse.add("Billing adress", personalAdresse);
 
-        Accordion payment = new Accordion() ;
+        Accordion payment = new Accordion();
         Span payment1 = new Span("Mastercard");
         Span payment2 = new Span("1234 5678 9012 3456");
         Span payment3 = new Span("Expires 06/21\n");
-        VerticalLayout paymentPanel = new VerticalLayout( payment1, payment2, payment3);
+        VerticalLayout paymentPanel = new VerticalLayout(payment1, payment2, payment3);
         paymentPanel.setPadding(false);
         paymentPanel.setPadding(false);
         payment.add("Payment", paymentPanel);
@@ -66,7 +66,6 @@ public class MainView extends VerticalLayout {
         accordionPanel.addContent(accordion, acordionAdresse, payment);
 
         Accordion accordionLink = new Accordion();
-
         accordionLink.add("Analytics", createContent(
                 createStyledAnchor("#", "Dashboard"),
                 createStyledAnchor("#", "Reports"),
@@ -74,18 +73,18 @@ public class MainView extends VerticalLayout {
         ));
 
 
-//Neue Beispiel-Say hello
+        //Neue Beispiel-Say hello
         // Create an HTML element
         Div layout = new Div();
 
-// Use TextField for standard text input
+        // Use TextField for standard text input
         TextField textField = new TextField("Your name");
 
-// Button click listeners can be defined as lambda expressions
+        // Button click listeners can be defined as lambda expressions
         Button button = new Button("Say hello",
                 e -> Notification.show("Hello!"));
 
-// Add the web components to the HTML element
+        // Add the web components to the HTML element
         layout.add(textField, button);
 
         add(
@@ -103,12 +102,13 @@ public class MainView extends VerticalLayout {
                 new HorizontalLayout(
                         layout
                 ),
-new HorizontalLayout(accordionLink)
+                new HorizontalLayout(accordionLink)
         );
 
 
     }
-    private VerticalLayout createContent(Anchor ...anchors) {
+
+    private VerticalLayout createContent(Anchor... anchors) {
         VerticalLayout content = new VerticalLayout();
         content.setPadding(false);
         content.setSpacing(false);
@@ -125,7 +125,5 @@ new HorizontalLayout(accordionLink)
         return anchor;
     }
 
-//    Accordion accordion = new Accordion();
-//    private Component billingAddressLayout;
-//    AccordionPanel billingAddressPanel = accordion.add("Billing address", billingAddressLayout);
+
 }
