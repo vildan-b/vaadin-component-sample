@@ -5,6 +5,7 @@ import com.vaadin.flow.component.accordion.Accordion;
 import com.vaadin.flow.component.accordion.AccordionPanel;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.checkbox.Checkbox;
+import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.Span;
@@ -14,12 +15,11 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.dom.ElementConstants;
 import com.vaadin.flow.router.Route;
-import com.vaadin.flow.component.html.Anchor;
 
 @Route("")
-public class MainView extends VerticalLayout {
+public class MainView2 extends VerticalLayout {
 
-    public MainView() {
+    public MainView2() {
         VerticalLayout todosList = new VerticalLayout();
         TextField taskField = new TextField();
         Button addButton = new Button("Add");
@@ -105,7 +105,7 @@ public class MainView extends VerticalLayout {
                 ),
 new HorizontalLayout(accordionLink)
         );
-
+        
 
     }
     private VerticalLayout createContent(Anchor ...anchors) {
