@@ -1,5 +1,6 @@
 package com.example.application.views.main;
 
+import com.example.application.views.main.object.Person;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.combobox.ComboBox;
@@ -10,7 +11,6 @@ import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.data.renderer.ComponentRenderer;
 import com.vaadin.flow.router.Route;
-import org.atmosphere.interceptor.AtmosphereResourceStateRecovery;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

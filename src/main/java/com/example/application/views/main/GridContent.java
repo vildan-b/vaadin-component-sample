@@ -1,5 +1,6 @@
 package com.example.application.views.main;
 
+import com.example.application.views.main.object.Person;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Span;

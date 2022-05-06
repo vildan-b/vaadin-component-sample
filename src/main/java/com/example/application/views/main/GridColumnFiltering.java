@@ -1,7 +1,7 @@
 package com.example.application.views.main;
 
+import com.example.application.views.main.object.Person;
 import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.grid.HeaderRow;
 import com.vaadin.flow.component.grid.dataview.GridListDataView;
@@ -17,7 +17,6 @@ import com.vaadin.flow.router.Route;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Locale;
 import java.util.function.Consumer;
 
 @Route("grid-column-filtering")

@@ -1,4 +1,4 @@
-package com.example.application.views.main;
+package com.example.application.views.main.object;
 
 import lombok.Data;
 
