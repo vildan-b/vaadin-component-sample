@@ -6,7 +6,6 @@ import com.vaadin.flow.component.html.H4;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.textfield.TextField;
-import com.vaadin.flow.router.Route;
 
 
 @CssImport(value = "./styles/components/form/vaadin-form-layout.css", themeFor = "vaadin-form-layout")
@@ -22,9 +21,9 @@ public class Test2 extends FormLayout {
         Span nameHighschool = new Span("high School: ");
         TextField school = new TextField();
 
-        Span nameUniversty = new Span("Universty: ");
+        Span nameUniversity = new Span("University: ");
         TextField universty = new TextField();
-    schoolBerich.add(title,nameHighschool,school,nameUniversty,universty);
+    schoolBerich.add(title,nameHighschool,school,nameUniversity,universty);
 
         add(schoolBerich);
     }

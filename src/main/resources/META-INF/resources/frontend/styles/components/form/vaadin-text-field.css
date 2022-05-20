@@ -3,5 +3,23 @@
     background-color: var(--lumo-base-color);
     font-weight: inherit;
      border: 3px solid green;
+}
 
+:host([theme="valid"]) [part="input-field"]{
+    border: 2px solid var(--bingo-form-background-color-success);
+    box-shadow: initial;
+    background-color:white;
+}
+
+:host([theme="valid"]) [part="input-field"] ::slotted(iron-icon[icon^="vaadin:"]){
+    color: var(--bingo-form-background-color-success);
+}
+
+:host([invalid]) [part="input-field"]{
+    border: 2px solid var(--lumo-error-text-color);
+    box-shadow: initial;
+}
+
+:host([invalid]) [part="input-field"] ::slotted(iron-icon[icon^="vaadin:"]){
+    color: var(--lumo-error-text-color);
 }

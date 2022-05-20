@@ -17,10 +17,14 @@
         }
 */
 
-[part="input-field"] {
-
-
- border: 3px solid blue;
-
+        :host < .span {
+                 border: 3px solid blue;
         }
+/*
+        :host{
+         border: 3px solid red;
+        }
+        */
+
+
 
