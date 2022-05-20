@@ -1,0 +1,26 @@
+  /*:host([theme~="left-label"]) .vaadin-text-field-container  {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        :host([theme~="left-label"]) .vaadin-text-area-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        :host([theme~="left-label"]) [part="label"] {
+            align-self: center;
+            flex: none;
+            white-space:pre-line;
+            width:220px;
+            text-align:right;
+        }
+*/
+
+[part="input-field"] {
+
+
+ border: 3px solid blue;
+
+        }
+

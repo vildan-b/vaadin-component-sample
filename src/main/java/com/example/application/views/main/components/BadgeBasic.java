@@ -1,4 +1,4 @@
-package com.example.application.views.main;
+package com.example.application.views.main.components;
 
 
 import com.vaadin.flow.component.Component;

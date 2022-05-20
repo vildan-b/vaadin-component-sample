@@ -1,4 +1,4 @@
-package com.example.application.views.main;
+package com.example.application.views.main.components;
 
 import com.example.application.views.main.object.Person;
 import com.vaadin.flow.component.details.Details;
